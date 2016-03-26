@@ -1,0 +1,150 @@
+/*header*/
+@font-face{
+    font-family: 'SourceSans';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+@font-face{
+	font-family: 'SourceSans-l';
+    src: url('../fonts/SourceSansPro-Light.ttf');
+}
+@font-face{
+    font-family: 'SourceSans-sb';
+    src: url('../fonts/SourceSansPro-Semibold.ttf');  
+}
+@font-face{
+    font-family:'SourceSans-b';
+    src: url('../fonts/SourceSansPro-Bold.ttf');
+}
+@font-face{
+	font-family: 'SourceSans-eb';
+    src: url('../fonts/SourceSansPro-Black.ttf');	
+}
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+	font-family: 'SourceSans';
+    font-size: 14px;
+    color: #2A5969;
+}
+.navbar-custom{
+    border: none;
+    height: 88px;
+    border-radius: 0;
+}
+.login-box a {
+    color: #4FBEE3;
+}
+.login-index{
+    background-color: #4FBEE3;
+    color: #FFF;
+}
+.login-box{
+    position: absolute;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.login-index .login-box .logo{
+    margin-bottom: 60px;
+    text-align: center;
+    background-image: url('../images/logo-w.png');
+    width: 300px;
+    height: 30px;
+    display: inline-block;
+}
+.login-index .login-box .form{
+    border-radius: 3px;
+    background-color: #FFF;
+    padding: 30px;
+    color: #2a5969;
+    text-align: left;
+}
+.form-control{
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border-color: #B1BFC4;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    height: auto;
+    padding: 10.5px 14px 5.5px;
+}
+.login-index .login-box .form h3{
+    margin-bottom: 30px;
+}
+.form label {
+    display: block;
+    font-weight: 500;
+    font-family: 'SourceSans-sb';
+    letter-spacing: 0.8px;
+    line-height: 1em;
+    padding-top: 1px;
+    margin-bottom: calc(1em - 2px);
+    color: #63808A;
+}
+.form-group {
+    margin-bottom: 2em;
+}
+.login-index .login-box .form .help{
+    margin-top: -10px;
+    text-align: right;
+}
+.radio, .checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.checkbox input[type=checkbox]{
+    margin: 0;
+    height: 22px;
+    width: 22px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.checkbox:after {
+    content: "";
+    height: 22px;
+    width: 22px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: url("../images/notchecked.svg");
+}
+.checkbox.checked-box:after {
+    background: url("../images/checked.svg");
+}
+.checkbox label {
+    display: block;
+    padding-top: 2px;
+    padding-left: 30px;
+    font-family: 'SourceSans';
+}
+.login-index .login-box form .button-row{
+    margin-top: 60px;
+}
+.btn {
+    min-width: 120px;
+    padding: 8px 30px 8px 30px;
+    font-size: 14px;    
+}
+.btn-primary, a.btn-primary {
+    color: #FFF;
+    background-color: #4FBEE3;
+    border-color: #4FBEE3;
+}
